@@ -28,7 +28,7 @@ export default function Histogram({ data }) {
       <Tooltip />
       <Legend />
       <CartesianGrid strokeDasharray="3 3" />
-      <Bar dataKey="count" fill="#0074D9" barSize={30} />
+      <Bar dataKey="count" fill="rgb(217, 0, 217)" barSize={30} />
     </BarChart>
   );
 }
