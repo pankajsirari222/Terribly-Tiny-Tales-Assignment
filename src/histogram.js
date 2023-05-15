@@ -6,31 +6,29 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend
+  Legend,
 } from "recharts";
 
-
-
-export default function Histogram({data}) {
+export default function Histogram({ data }) {
   return (
     <BarChart
-      width={500}
-      height={300}
+      width={1000}
+      height={400}
       data={data}
       margin={{
         top: 5,
         right: 30,
         left: 20,
-        bottom: 5
+        bottom: 5,
       }}
-      barSize={20}
+      className="histo"
     >
-      <XAxis dataKey="word" scale="band" padding={{ left: 10, right: 10 }} />
+      <XAxis dataKey="word" padding={{ left: 10, right: 10 }} />
       <YAxis />
       <Tooltip />
       <Legend />
       <CartesianGrid strokeDasharray="3 3" />
-      <Bar dataKey="count" fill="#8884d8" background={{ fill: "#eee" }} />
+      <Bar dataKey="count" fill="#0074D9" barSize={30} />
     </BarChart>
   );
 }

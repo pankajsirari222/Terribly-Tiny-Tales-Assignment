@@ -60,12 +60,12 @@ function App() {
   return (
     <div className="App">
       <div className="div-1">
-      <h1> Terribly Tiny Tales Assignment</h1>
+        <h1> Terribly Tiny Tales Assignment</h1>
         {flag ? (
           <Histogram data={ans} />
         ) : (
           <div className="submit-btn">
-            <h3> Click Here to fetch the data : </h3>
+            <h2> Click Here to fetch the data : </h2>
             <button type="submit" onClick={handleClick}>
               Submit
             </button>
@@ -79,7 +79,7 @@ function App() {
             filename={"words_Frequency_Data.csv"}
             className="export-text"
           >
-            Export to CSV
+            Export this data to CSV
           </CSVLink>
         )}
       </div>
